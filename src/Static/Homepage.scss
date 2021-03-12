@@ -1,0 +1,129 @@
+//extend class
+.box_border {
+  border-radius: 22px;
+  background: #eceff4;
+  box-shadow: 6px 6px 7px #898989, -6px -6px 7px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 3px;
+}
+
+//extend class
+.font_properties {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  min-width: 350px;
+  // max-width: ;
+  border: 1px solid white;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background: #eceff4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .sub-Container {
+    height: 80%;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 40px;
+    background: #eceff4;
+    box-shadow: 13px 13px 13px #acacac, -13px -13px 13px #ffffff;
+
+    .sub-Container-Text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20%;
+      font-size: 110%;
+    }
+
+    .sub-Container-OperationBox {
+      height: 80%;
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      .post-Operation {
+        height: 37%;
+        width: 22%;
+        // margin: 0px 50px 0px 140px;
+        margin: 0px 10% 0px 10%;
+        @extend .font_properties;
+        @extend .box_border;
+      }
+
+      .get-Operation {
+        height: 37%;
+        width: 22%;
+        // margin: 0px 80px 0px 50px;
+        margin: 0px 10% 0px 10%;
+        @extend .font_properties;
+        @extend .box_border;
+      }
+
+      .put-Operation {
+        height: 37%;
+        width: 22%;
+        // margin: 0px 50px 0px 140px;
+        margin: 0px 10% 0px 20%;
+        @extend .font_properties;
+        @extend .box_border;
+      }
+
+      .delete-Operation {
+        height: 37%;
+        width: 22%;
+        // margin: 0px 80px 0px 50px;
+        margin: 0px 10% 0px 10%;
+        @extend .font_properties;
+        @extend .box_border;
+      }
+
+      @media screen and (max-width: 514px) {
+        //extend class
+        .CRUD_media_properties {
+          width: 20%;
+          height: 20%;
+          margin: 0 10%;
+          font-size: 12px;
+        }
+
+        .post-Operation {
+          @extend .CRUD_media_properties;
+        }
+
+        .get-Operation {
+          @extend .CRUD_media_properties;
+        }
+
+        .put-Operation {
+          @extend .CRUD_media_properties;
+        }
+
+        .delete-Operation {
+          @extend .CRUD_media_properties;
+        }
+      }
+    }
+    @media screen and (max-width: 514px) {
+      .sub-Container-OperationBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .sub-Container {
+      width: 80%;
+    }
+  }
+}
