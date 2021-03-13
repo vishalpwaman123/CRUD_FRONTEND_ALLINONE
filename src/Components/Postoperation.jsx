@@ -9,27 +9,56 @@ export class Postoperation extends Component {
     return (
       <div className="container">
         <div className="sub_Container">
-          <div className="operation_Header">
-            <div className="operation-Get-All">
-              <Button className="get-All" variant="contained">
-                All Data
-              </Button>
+          <div className="Input-data">
+            <div className="post-Name">
+              <div className="Text-Header">Enter Name:</div>
+              <div className="Input-Header">
+                <TextField
+                  id="outlined-basic"
+                  variant="outlined"
+                  placeholder="eg. Vishal"
+                />
+              </div>
             </div>
-            <div className="operation_Byattribute_Button">
-              <div className="operation_Byid_Button">
-                <div className="Text-Header">Enter Id:</div>
-                <TextField id="outlined-basic" variant="outlined" />
-                <Button className="get-ById" variant="contained">
-                  Search
-                </Button>
+
+            <div className="post-Designation">
+              <div className="Text-Header">Enter Designation:</div>
+              <div className="Input-Header">
+                <TextField
+                  id="outlined-basic"
+                  variant="outlined"
+                  placeholder="eg. Software Engineer"
+                />
               </div>
-              <div className="operation_Byname">
-                <div className="Text-Header">Enter Name:</div>
-                <TextField id="outlined-basic" variant="outlined" />
-                <Button className="get-ByName" variant="contained">
-                  Search
-                </Button>
+            </div>
+
+            <div className="post-Address">
+              <div className="Text-Header">Enter Address:</div>
+              <div className="Input-Header">
+                <TextField
+                  id="outlined-basic"
+                  variant="outlined"
+                  placeholder="eg. Kondhwa"
+                />
               </div>
+            </div>
+
+            <div className="post-Mobile">
+              <div className="Text-Header">Enter Mobile:</div>
+              <div className="Input-Header">
+                <TextField
+                  
+                  id="outlined-basic"
+                  variant="outlined"
+                  placeholder="eg. 9881563158"
+                />
+              </div>
+            </div>
+
+            <div className="post-Button">
+              <Button className="post-operation-button" variant="contained">
+                ADD
+              </Button>
             </div>
           </div>
           <div className="operation_Data">

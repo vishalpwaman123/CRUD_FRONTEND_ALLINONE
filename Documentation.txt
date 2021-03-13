@@ -1,14 +1,22 @@
 This Project for all CRUD API Operation
 ------------------------------------------
 POST
+React : /postoperation
+BackEnd :
 
 ------------------------------------------
 GET
+React : /getoperation
+BackEnd :
 
 ------------------------------------------
 PUT
+React : /putoperation
+BackEnd :
 
 ------------------------------------------
 DELETE
+React : /deleteoperation
+BackEnd :
 
 -----------------------------------------

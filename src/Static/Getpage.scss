@@ -16,143 +16,137 @@
 
 .container {
   @include height_width(100%, 100%);
+  // max-width: 30%;
   min-width: 470px;
   min-height: 629px;
 
   .sub_Container {
     @include height_width(80%, 80%);
+    // border: 0px solid white;
+    // @include border(0px, solid, white, none);
+    border-radius: 22px 0px 0px 0px;
     background: #eceff4;
     box-shadow: 6px 6px 7px #898989, -6px -6px 7px #ffffff;
-    @include flex(flex, none, center);
-    flex-direction: column;
 
-    .Input-data {
-      @include flex(flex, center, center);
-      @include height_width(70%, 100%);
-      flex-direction: column;
-      .post-Name {
-        @include height_width(20%, 100%);
+    .operation_Header {
+      @include height_width(20%, 100%);
+      // border: 1px solid white;
+      // box-sizing: border-box;
+      // @include border(1px, solid, white, border-box);
+
+      display: flex;
+
+      .operation-Get-All {
+        @include height_width(100%, 15%);
         @include border(1px, solid, white, border-box);
         @include flex(flex, center, center);
-        // border-radius: 22px 0 0 0;
+        border-radius: 22px 0 0 0;
 
-        .MuiInputBase-input {
-          height: 5px;
-          box-shadow: none;
+        .get-All {
+          @include height_width(50%, 50%);
+          color: #fff !important;
+          text-transform: uppercase;
+          text-decoration: none;
+          background: #ed3330;
+          border: none;
+          transition: all 0.4s ease 0s;
         }
 
-        .MuiFormControl-root {
-          margin: 5px 10px;
-          width: 50%;
-        }
-      }
-
-      // .post-Name :hover {
-      //   box-shadow: -2px 0px 20px 4px rgba(0, 0, 0, 0.59);
-      //   -webkit-box-shadow: -2px 0px 20px 4px rgba(0, 0, 0, 0.59);
-      //   -moz-box-shadow: -2px 0px 20px 4px rgba(0, 0, 0, 0.59);
-      // }
-
-      .post-Designation {
-        @include height_width(20%, 100%);
-        @include flex(flex, center, center);
-
-        .MuiInputBase-input {
-          height: 5px;
-        }
-
-        .MuiFormControl-root {
-          margin: 5px 10px;
-          width: 50%;
+        .get-All:hover {
+          background: #202020;
+          letter-spacing: 1px;
+          background: linear-gradient(145deg, #5069fa, #1a31ff);
+          box-shadow: 6px 6px 17px #5a5a5a, -6px -6px 17px #ffffff;
+          transition: all 0.4s ease 0s;
         }
       }
 
-      .post-Address {
-        @include height_width(20%, 100%);
-        @include border(1px, solid, white, border-box);
-        @include flex(flex, center, center);
-        // border-radius: 0 22px 0 0;
+      .operation_Byattribute_Button {
+        @include height_width(100%, 85%);
+        display: flex;
 
-        .MuiInputBase-input {
-          height: 5px;
+        .operation_Byid_Button {
+          @include height_width(100%, 50%);
+          // border-right: 1px solid white;
+          // box-sizing: border-box;
+          // @include border(1px, solid, white, border-box);
+          @include flex(flex, center, center);
+
+          .MuiInputBase-input {
+            height: 5px;
+          }
+
+          .MuiFormControl-root {
+            margin: 5px 10px;
+            width: 35%;
+          }
+
+          .get-ById {
+            width: 20%;
+            background-color: #1a31ff;
+            color: #fff;
+          }
         }
 
-        .MuiFormControl-root {
-          margin: 5px 10px;
-          width: 50%;
+        .operation_Byname {
+          @include height_width(100%, 50%);
+          @include border(1px, solid, white, border-box);
+          @include flex(flex, center, center);
+          border-radius: 0 22px 0 0;
+
+          .MuiInputBase-input {
+            height: 5px;
+          }
+
+          .MuiFormControl-root {
+            margin: 5px 10px;
+            width: 35%;
+          }
+
+          .get-ByName {
+            width: 20%;
+            background-color: #1a31ff;
+            color: #fff;
+          }
         }
-      }
-
-      .post-Mobile {
-        @include height_width(20%, 100%);
-        @include flex(flex, center, center);
-
-        .MuiInputBase-input {
-          height: 5px;
-        }
-
-        .MuiFormControl-root {
-          margin: 5px 10px;
-          width: 50%;
-        }
-      }
-
-      .post-Button {
-        @include flex(flex, center, center);
-        @include height_width(20%, 100%);
-        .post-operation-button {
-          background-color: rgb(60, 60, 240);
-          @include height_width(50%, 30%);
-          color: white;
-        }
-      }
-
-      .Text-Header {
-        @include height_width(100%, 30%);
-        @include flex(flex, center, center);
-      }
-
-      .Input-Header {
-        @include height_width(100%, 70%);
-        @include flex(flex, center, center);
       }
     }
-  }
 
-  .operation_Data {
-    @include height_width(30%, 100%);
-    // @include border(1px, solid, white, border-box);
-    margin-top: 20px;
+    .operation_Data {
+      @include height_width(80%, 100%);
+      // @include border(1px, solid, white, border-box);
+      margin-top: 20px;
 
-    .operation_Data_Table {
-      @include height_width(100%, 100%);
+      .operation_Data_Table {
+        @include height_width(100%, 100%);
 
-      .operation_Data_Header {
-        @include height_width(12%, 100%);
-        border-bottom: 1px solid black;
-        box-sizing: border-box;
-        // @include border(1px, solid, white, border-box);
+        .operation_Data_Header {
+          @include height_width(12%, 100%);
+          border-bottom: 1px solid black;
+          box-sizing: border-box;
+          // @include border(1px, solid, white, border-box);
 
-        .Header_Id {
-          width: 8%;
-          @include border(2px, solid, black, border-box);
-        }
+          .Header_Id {
+            width: 8%;
+            @include border(2px, solid, black, border-box);
+          }
 
-        .Header_Name {
-          min-width: 20%;
-          @include border(2px, solid, black, border-box);
-        }
-        .Header_Designation {
-          min-width: 30%;
-          @include border(2px, solid, black, border-box);
-        }
-        .Header_Address {
-          min-width: 30%;
-          @include border(2px, solid, black, border-box);
-        }
-        .Header_Mobile {
-          min-width: 12%;
-          @include border(2px, solid, black, border-box);
+          .Header_Name {
+            min-width: 20%;
+            @include border(2px, solid, black, border-box);
+          }
+          .Header_Designation {
+            min-width: 30%;
+            @include border(2px, solid, black, border-box);
+          }
+          .Header_Address {
+            min-width: 30%;
+            @include border(2px, solid, black, border-box);
+          }
+          .Header_Mobile {
+            min-width: 12%;
+            @include border(2px, solid, black, border-box);
+          }
         }
       }
     }

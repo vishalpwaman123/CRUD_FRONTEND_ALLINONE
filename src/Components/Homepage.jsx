@@ -15,23 +15,37 @@ export default class Homepage extends Component {
         <div className="sub-Container">
           <div className="sub-Container-Text">Operations</div>
           <div className="sub-Container-OperationBox">
-            
-            <Button className="post-Operation" variant="contained">
+            <Button
+              className="post-Operation"
+              variant="contained"
+              href="/postoperation"
+            >
               POST
             </Button>
 
-            <Button className="get-Operation" variant="contained">
+            <Button
+              className="get-Operation"
+              variant="contained"
+              href="/getoperation"
+            >
               GET
             </Button>
 
-            <Button className="put-Operation" variant="contained">
+            <Button
+              className="put-Operation"
+              variant="contained"
+              href="/putoperation"
+            >
               PUT
             </Button>
 
-            <Button className="delete-Operation" variant="contained">
+            <Button
+              className="delete-Operation"
+              variant="contained"
+              href="/deleteoperation"
+            >
               DELETE
             </Button>
-
           </div>
         </div>
       </div>
